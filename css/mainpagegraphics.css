@@ -1,0 +1,85 @@
+body
+{
+    background-color: black;
+    color:white;
+    background-image: url("../imgs/spacebg.jpg");
+    background-size: contain;
+    background-size: 50%;
+}
+
+header
+{
+    display: flex; /* The display property specifies the display behavior (the type of rendering box) of an element.  Flex allows logo and heading to be next to each other*/
+    align-items: center; /* center alignments for all items in the flex container*/
+    color: #67A283;
+    margin-left:10%;
+    margin-right: 20%;
+}
+
+
+h1
+{
+    font-weight:bolder;
+    font-size: 4em;
+}
+
+
+a
+{
+    color:#67A283; /* change the color of the hyperlinks text*/
+}
+
+
+
+nav
+{
+    text-align: center; /* aligns unordered list text to center of screen */
+}
+
+
+li
+{
+    display: inline; /* The display property specifies the display behavior (the type of rendering box) of an element. inline keeps each list item side by side from each other*/
+    font-weight: bold;
+
+}
+
+#didyouknow
+{
+    position: relative;
+    margin-left: 5%;
+    margin-top: 15em;
+}
+
+#moviereviews
+{
+    position:relative;
+    margin-left: 50%;
+    margin-top: -46em;
+    width: 20%;
+}
+
+#planetoftheday
+{
+    position: relative;
+    margin-left: 5%;
+    margin-top:25em;
+    width: 25%;
+    text-align: center;
+}
+
+#characteroftheday
+{
+    position:relative;
+    left:60%;
+    top: -40em;
+    width: 20%;
+    text-align: center;
+}
+
+footer
+{
+    position: relative;
+    text-align: center;
+    font-weight: bold;
+}
