@@ -1,15 +1,14 @@
 <!--
-    for 4-8-21 
-    CONSIDER ADDING ASIDE ELEMENT FOR IMAGES OR VIDEOS? MAYBE
-    MAKE A CSS FILE AND LINK IT TO THIS HTML FILE
-    ADD COLORS, CENTER TEXT, FORMAT EVERYTHING
+   Name : Carlos Castillo
+   Date : 4-16-21
+   CIS 170 Website Design & Tools
 -->
 <!DOCTYPE html>
 <html lang = "en">
     <head>
         <title>SW Movie Temple</title>
         <meta charset = "utf-8"/>
-        <link rel="stylesheet" href = "css/mainpagegraphics.css"/>
+        <!-- <link rel="stylesheet" href = "css/mainpagegraphics.css"/> leave out the css file for now until the professor covers it in class!-->
     </head>
     <body>
         <!-- fill in each of these semantic elements (header,nav,main,footer)-->
@@ -18,34 +17,36 @@
         Company Logo
         Company Name / Page Name
         Banner-->
-        <aside><img src="imgs/lightsaberjeditemple.jpg" alt="Lightsaber weapon, it has a hilt to put your hand on and a glowing green saber." /></aside>
-        <h1>Star Wars Movie Temple</h1>
+            <p>header stuff go below</p> 
+            <aside><img src="imgs/lightsaberjeditemple.jpg" alt="Lightsaber weapon, it has a hilt to put your hand on and a glowing green saber." /></aside>
+            <h1>Star Wars Movie Temple</h1>
         </header>
 
         <nav> 
         <!--Container of links for a site. Usually contains a Link Menu-->
+            <p> navigation links go below</p>
             <ul> <!-- the link menu is here -->
                 <!-- anchor element - creates hyperlink to another page or file remember to include protocols http or https -->
                 <li><a href ="index.html">Home</a></li>
                 <!-- relative hyperlink (links to pages on same computer) -->
-                <li><a href ="extraPages/about.html">About</a></li>
-                <li><a href = "extraPages/movieCharsAndLocations.html">Movie Characters and Locations</a></li>
-                <li><a href = "extraPages/donate.html">Donate</a></li>
-                <li><a href = "extraPages/contact.html">Contact</a></li>
-                <li><a href = "extraPages/forum.html">Forum</a></li>
+                <li><a href ="about.html">About</a></li>
+                <li><a href = "movieCharsAndLocations.html">Movie Characters & Locations</a></li>
+                <li><a href = "contact.html">Contact</a></li>
+                <li><a href = "forum.html">Forum</a></li>
             </ul>
         </nav>
 
         <main>
         <!-- Contains the major content of the page
         Maybe be subdivided into sections and articles
-        -->
-        <section id = "didyouknow"> <!-- fun fact section in the main page-->
-            <h2>Did You Know?</h2>
-            <img src = "imgs/c3po.png" alt = "C3PO, the golden droid robot that is fluent in over 6 million languages"/>
-            <p>C-3PO is fluent in over six million different languages!!!</p>
-            <p>Source : https://www.nme.com/blogs/the-movies-blog/star-wars-facts-2077554</p>
-        </section>
+        --> 
+            <p> main content goes below</p>
+            <section id = "didyouknow"> <!-- fun fact section in the main page-->
+                <h2>Did You Know?</h2>
+                <aside><img src = "imgs/c3po.png" alt = "C3PO, the golden droid robot that is fluent in over 6 million languages"/></aside>
+                <p>C-3PO is fluent in over six million different languages!!!</p>
+                <p>Source : https://www.nme.com/blogs/the-movies-blog/star-wars-facts-2077554</p>
+            </section>
 
         <!--
             The id attribute specifies a unique id for an HTML element. 
@@ -53,46 +54,41 @@
 The id attribute is used to point to a specific style declaration in a style sheet. 
         -->
 
-        <section id = "moviereviews">
-            <h2>Featured Star Wars Movie Reviews</h2>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/fjTp65UNQUs" title="YouTube video player"
-                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/OBz7KAjZa5w" title="YouTube video player"
-                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-        </section>
+            <section id = "moviereviews">
+                <h2>Featured Star Wars Movie Reviews</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/fjTp65UNQUs" title="YouTube video player"
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/OBz7KAjZa5w" title="YouTube video player"
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </section>
 
-        <section id="planetoftheday">
-            <h2>Planet of the Day</h2>
-            <img src="imgs/hothbattle.jpg"
-                alt="Hoth is a white snowy planet with a battle happening on its surface between two groups" />
-            <p>Planet Hoth was the site of the Rebel Alliance's Echo Base. It
-                is a world of snow and ice and home to deadly creatures like the wampa.</p>
-            <p>Source : https://www.starwars.com/databank/hoth</p>
-        </section>
+            <section id="planetoftheday">
+                <h2>Planet of the Day</h2>
+                <aside><img src="imgs/hothbattle.jpg" alt="Hoth is a white snowy planet with a battle happening on its surface between two groups" /></aside>
+                <p>Planet Hoth was the site of the Rebel Alliance's Echo Base. It is a world of snow and ice and home to deadly creatures like the wampa.</p>
+                <p>Source : https://www.starwars.com/databank/hoth</p>
+            </section>
 
 
-        <section id = "characteroftheday">
-            <h2>Character of the Day</h2>
-            <img src = "imgs/darthvaderhelmet.jpg" alt = "Darth Vaders black helmet" />
-            <p> Darth Vader is the central character in the Star Wars franchise. He is the Chosen One, a Jedi legend who brings balance
-            to the Force. Vader was born as Anakin Skywalker on Tatooine and the Prequel Trilogy cover his journey from slavery to
-            becoming a Jedi and his eventual fall to the Dark Side. Along the way, he earns a great name for himself by saving the
-            Galactic Republic more than a few times and creates close relationships with other major characters in the series like
-            his Jedi Master, Obi-Wan Kenobi and his love interest, Padme Amidala. The prequels end with Anakin turning his back on
-            the Jedi and swearing his allegiance to the Emperor.
-            
-            The Original Star Wars Trilogy takes place 19 years after the destruction of the Jedi Order and focuses more on his son,
-            Luke Skywalker's story. Vader is portrayed as an antagonistic character and tries to turn his son towards the dark side
-            as well. But the tables are turned when Luke manages to find some good in his father. With his help, Anakin Skywalker
-            redeems himself and defeats the Emperor aboard the fully operational Death Star. Sadly, Anakin suffered heavy damage to
-            his suit during the encounter and dies in his son's arms on the Death Star, shortly before it explodes.</p>
-            Source : https://www.giantbomb.com/darth-vader/3005-308/
-            
-        </section>
-
-
+            <section id = "characteroftheday">
+                <h2>Character of the Day</h2>
+                <aside><img src = "imgs/darthvaderhelmet.jpg" alt = "Darth Vaders black helmet" /> </aside>
+                <p> Darth Vader is the central character in the Star Wars franchise. He is the Chosen One, a Jedi legend who brings balance
+                to the Force. Vader was born as Anakin Skywalker on Tatooine and the Prequel Trilogy cover his journey from slavery to
+                becoming a Jedi and his eventual fall to the Dark Side. Along the way, he earns a great name for himself by saving the
+                Galactic Republic more than a few times and creates close relationships with other major characters in the series like
+                his Jedi Master, Obi-Wan Kenobi and his love interest, Padme Amidala. The prequels end with Anakin turning his back on
+                the Jedi and swearing his allegiance to the Emperor.
+                
+                The Original Star Wars Trilogy takes place 19 years after the destruction of the Jedi Order and focuses more on his son,
+                Luke Skywalker's story. Vader is portrayed as an antagonistic character and tries to turn his son towards the dark side
+                as well. But the tables are turned when Luke manages to find some good in his father. With his help, Anakin Skywalker
+                redeems himself and defeats the Emperor aboard the fully operational Death Star. Sadly, Anakin suffered heavy damage to
+                his suit during the encounter and dies in his son's arms on the Death Star, shortly before it explodes.</p>
+                Source : https://www.giantbomb.com/darth-vader/3005-308/    
+            </section>
         </main>
 
         <footer>
@@ -104,12 +100,11 @@ The id attribute is used to point to a specific style declaration in a style she
             <ul>
                 <!-- a is anchor element - creates hyperlink to another page or file remember to include protocols http or https -->
                 <!-- relative hyperlink (links to pages on same computer) -->
-                <li><a href="extraPages/about.html">About</a></li>
-                <li><a href="extraPages/contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
             <br /><!-- go to next line with line break tag-->
-            &copy; Copyright 2021 StarWarsMovieTemple.com
-            </p>
+            <p>&copy; Copyright 2021 StarWarsMovieTemple.com</p>
         </footer>
     </body>
 </html>
