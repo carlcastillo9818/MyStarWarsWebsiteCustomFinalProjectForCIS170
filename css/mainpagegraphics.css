@@ -22,10 +22,12 @@ nav
     text-align: center; /* aligns unordered list text to center of screen */
 }
 
+/*
 li
 {
-    display: inline-block; /*The display property specifies the display behavior (the type of rendering box) of an element. inline keeps each list item side by side from each other*/
+    display: inline-block; The display property specifies the display behavior (the type of rendering box) of an element. inline keeps each list item side by side from each other
 } 
+*/
 
 
 p
