@@ -2,25 +2,13 @@ body
 {
     background-color: black;
     color:white;
-    background-image: url("../imgs/spacebg.jpg");
-    background-size: contain;
-    background-size: 50%;
+    /*background-image: url("../imgs/spacebg.jpg"); */
 }
+
 
 header
 {
-    display: flex; /* The display property specifies the display behavior (the type of rendering box) of an element.  Flex allows logo and heading to be next to each other*/
-    align-items: center; /* center alignments for all items in the flex container*/
     color: #67A283;
-    margin-left:10%;
-    margin-right: 20%;
-}
-
-
-h1
-{
-    font-weight:bolder;
-    font-size: 4em;
 }
 
 
@@ -29,21 +17,26 @@ a
     color:#67A283; /* change the color of the hyperlinks text*/
 }
 
-
-
 nav
 {
     text-align: center; /* aligns unordered list text to center of screen */
 }
 
-
 li
 {
-    display: inline; /* The display property specifies the display behavior (the type of rendering box) of an element. inline keeps each list item side by side from each other*/
-    font-weight: bold;
+    display: inline-block; /*The display property specifies the display behavior (the type of rendering box) of an element. inline keeps each list item side by side from each other*/
+} 
 
+
+p
+{
+    width: 90%;
+    display: inline-block;
 }
 
+
+
+/*
 #didyouknow
 {
     position: relative;
@@ -76,6 +69,7 @@ li
     width: 20%;
     text-align: center;
 }
+*/
 
 footer
 {
