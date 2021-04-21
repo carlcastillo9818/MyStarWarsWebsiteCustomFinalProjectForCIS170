@@ -8,20 +8,68 @@ body
 
 header
 {
+    width:auto;
     color: #67A283;
+    background-color: rgb(44, 44, 44);
 }
 
+img
+{
+    margin-top:20px;
+    margin-left:12%;
+    width:auto;
+    border:5px red dotted;
+    /*
+
+    Border - A border that goes around the padding and content
+    By utilizing border shorthand you may provide at once:
+border-width
+border-style (required)
+border-color
+
+Example
+border: 5px red dotted;*/
+}
+
+h1
+{
+    text-align: center;
+    margin-top:-140px;
+    margin-left:40%;
+    width:22%;
+    font-size: 4em;
+    /*
+
+    Margin used to create space around elements, outside of any defined borders.
+
+    margin: 50px 50% 100px 25%;
+    The margin property is a shorthand property
+If contains 4 values: margin-top, margin-right, margin-bottom, margin-left
+*/
+}
+
+nav
+{
+    text-align: center; /* aligns unordered list text to center of screen */
+    background-color: rgb(80, 80, 80);
+
+}
 
 a
 {
     color:#67A283; /* change the color of the hyperlinks text*/
 }
 
-nav
+main
 {
-    text-align: center; /* aligns unordered list text to center of screen */
+    background-color:rgb(228, 228, 228);
 }
 
+section
+{
+    background-color: rgb(33, 33, 33);
+    width: auto;
+}
 /*
 li
 {
@@ -29,14 +77,46 @@ li
 } 
 */
 
+h2
+{
+    background-color: darkred;
+}
+
+h3
+{
+    background-color: purple;
+}
 
 p
 {
-    width: 90%;
-    display: inline-block;
+    width:30%;
+    border:5px blue dotted;
+    padding:10px 3% 5px 3%;
+    margin-left: 1%;
+    background-color: lightgreen;
+    /*
+
+    The padding property works similar to the margin
+This is the space between the content itself and the border.
+
+    The padding also has a shorthand notation
+If contains 4 values: padding-top, padding-right, padding-bottom, padding-left
+*/
 }
 
+aside
+{
+    border: 2px yellow dotted;
+    margin-left: 32%;
+    margin-top:-120px;
+    width: 50%;
+}
 
+footer
+{
+    text-align: center;
+    font-weight: bold;
+}
 
 /*
 #didyouknow
@@ -73,9 +153,3 @@ p
 }
 */
 
-footer
-{
-    position: relative;
-    text-align: center;
-    font-weight: bold;
-}
