@@ -1,155 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+
+
+*
+{
+    padding:0;
+    border:0;
+    margin:0;
+    box-sizing:border-box;
+/* set all CSS box properties to 0 and use border-box for box sizing so that
+the width and height properties (and min/max properties) includes content, padding and border.*/
+}  
+
 body
 {
-    background-color: black;
-    color:white;
-    /*background-image: url("../imgs/spacebg.jpg"); */
+    background-color: rgb(0, 0, 0); /* set this to red temporarily*/
+    color: white;
 }
-
 
 header
 {
-    width:auto;
-    color: #67A283;
-    background-color: rgb(44, 44, 44);
+    /* shorthand margin property for two values
+    first value affects top and bottom (use px for this)
+    second value affects left and right margins (use % for this)*/
+    margin: 40px 0.5%;
+    padding-bottom: 10px;
+    display: grid; /*using the grid layout but many others exist.  stick to the grid for this project */
+    grid-template-columns:1fr 70%; /* n (number of) columns of size 1fr.  fr means what fraction do you want to use */
+    background-color: rgb(0, 0, 0);
+    box-shadow:-1px -5px 30px 10px #67A283; /* lets you change the surrounding shadow (v-offset, h-offset, blur, spread) of the element*/
 }
 
-img
+#headerlogo
 {
-    margin-top:20px;
-    margin-left:12%;
-    width:auto;
-    border:5px red dotted;
-    /*
-
-    Border - A border that goes around the padding and content
-    By utilizing border shorthand you may provide at once:
-border-width
-border-style (required)
-border-color
-
-Example
-border: 5px red dotted;*/
+    margin:32px 10%;
 }
 
 h1
 {
-    text-align: center;
-    margin-top:-140px;
-    margin-left:40%;
-    width:22%;
     font-size: 4em;
-    /*
+    font-family: "Zen Dots", sans-serif;
+    /*The width property sets the width of an element.
+The width of an element does not include padding, borders, or margins!*/
+    width: 70%;
+    margin-top: 1%;
+    color: #67A283; 
+    margin-left: 5%;
 
-    Margin used to create space around elements, outside of any defined borders.
-
-    margin: 50px 50% 100px 25%;
-    The margin property is a shorthand property
-If contains 4 values: margin-top, margin-right, margin-bottom, margin-left
-*/
 }
 
-nav
+
+.navigatorLists /* affects the nav and the footer elements */
 {
-    text-align: center; /* aligns unordered list text to center of screen */
-    background-color: rgb(80, 80, 80);
-
+    text-align: center; /* push all the text to the center */
+    background-color: #171717;
+    font-size: 1.5em;
 }
 
+.navLink
+{
+    display: inline-block; /* using inline-block allows the navigation menu to go side by side (one way to do it)*/
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+/* change the color of the hyperlinks by modifying anchor elements */
 a
 {
-    color:#67A283; /* change the color of the hyperlinks text*/
+    color: #75A4E6;
+    font-family: "Zen Dots", sans-serif;
+   
 }
 
-main
+.mainpage
 {
-    background-color:rgb(228, 228, 228);
+    /* shorthand border property for 3 values (width ,color, style)*/
+    margin: 25px 2%; /* adjust top,bottom,left,and right margins of this element (main) */
+    display: grid; /* we are using the grid layout but many others exist.  stick to the grid for the project */
+    grid-template-columns: auto auto auto auto; /* four columns of automatic size.  fr means what fraction do you want to use */
+    column-gap:15%; /* adjust the space between each column in the grid */
+    row-gap: 35px; /* adjust the space between each row in the grid*/
+}
+
+h2
+{
+    background-color: #67A283;
 }
 
 section
 {
-    background-color: rgb(33, 33, 33);
-    width: auto;
-}
-/*
-li
-{
-    display: inline-block; The display property specifies the display behavior (the type of rendering box) of an element. inline keeps each list item side by side from each other
-} 
-*/
-
-h2
-{
-    background-color: darkred;
+    font-family: "Zen Dots", sans-serif;
+    color:white;
 }
 
-h3
-{
-    background-color: purple;
-}
-
-p
-{
-    width:30%;
-    border:5px blue dotted;
-    padding:10px 3% 5px 3%;
-    margin-left: 1%;
-    background-color: lightgreen;
-    /*
-
-    The padding property works similar to the margin
-This is the space between the content itself and the border.
-
-    The padding also has a shorthand notation
-If contains 4 values: padding-top, padding-right, padding-bottom, padding-left
-*/
-}
-
-aside
-{
-    border: 2px yellow dotted;
-    margin-left: 32%;
-    margin-top:-120px;
-    width: 50%;
-}
-
-footer
-{
-    text-align: center;
-    font-weight: bold;
-}
-
-/*
 #didyouknow
 {
-    position: relative;
-    margin-left: 5%;
-    margin-top: 15em;
+    text-align: center;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    margin-left: 15%;
+    margin-right: -15%;
+    margin-top: 1px;
+    margin-bottom:30px;
+}
+
+#funfactimg
+{
+    margin: 20px 20%;
+}
+
+iframe
+{
+    width: 100%;
 }
 
 #moviereviews
 {
-    position:relative;
-    margin-left: 50%;
-    margin-top: -46em;
-    width: 20%;
+    text-align: center;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    margin-left: 18%;
+    margin-right: -18%;
+
 }
 
 #planetoftheday
 {
-    position: relative;
-    margin-left: 5%;
-    margin-top:25em;
-    width: 25%;
     text-align: center;
+    grid-column: 2/3;
+    grid-row: 2 / 2;
+    margin-left: 18%;
+    margin-right: -18%;
 }
 
 #characteroftheday
 {
-    position:relative;
-    left:60%;
-    top: -40em;
-    width: 20%;
+    grid-column: 1 / 2; /* start at column (imaginary line) 1 and end at column 2 */
+    grid-row: 2; /* start at row 2 and end at row 2*/
     text-align: center;
+    margin-left: 15%;
+    margin-right: -15%;
+    margin-top: -1px;
+    margin-bottom:30px;
 }
-*/
 
+/* the dot . denotes class and hashtag # denotes id */
+#charofthedayimg
+{
+    margin-top: 20px;
+}
+
+#planetofthedayimg
+{
+    margin-top: 20px;
+}
+
+.homepageimgs
+{
+    box-shadow:-1px 1px 20px 5px #67A283; /* lets you change the surrounding shadow (v-offset, h-offset, blur, spread) of the element*/
+ 
+}

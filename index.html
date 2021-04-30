@@ -17,31 +17,31 @@
         Company Logo
         Company Name / Page Name
         Banner-->
-            <img src="imgs/lightsaberjeditemple.jpg" alt="Lightsaber weapon, it has a hilt to put your hand on and a glowing green saber." />
+            <img id = "headerlogo" src="imgs/lightsaberjeditemple.jpg" alt="Lightsaber weapon, it has a hilt to put your hand on and a glowing green saber." />
             <h1>Star Wars Movie Temple</h1>
         </header>
 
-        <nav> 
+        <nav class = "navigatorLists"> 
         <!--Container of links for a site. Usually contains a Link Menu-->
             <ul> <!-- the link menu is here -->
                 <!-- anchor element - creates hyperlink to another page or file remember to include protocols http or https -->
-                <li><a href ="index.html">Home</a></li>
+                <li class = "navLink"><a href ="index.html">Home</a></li>
                 <!-- relative hyperlink (links to pages on same computer) -->
-                <li><a href ="about.html">About</a></li>
-                <li><a href = "movieCharsAndLocations.html">Movie Characters & Locations</a></li>
-                <li><a href = "contact.html">Contact</a></li>
-                <li><a href = "forum.html">Forum</a></li>
+                <li class = "navLink"><a href ="about.html">About</a></li>
+                <li class = "navLink"><a href = "movieCharsAndLocations.html">Movie Characters & Locations</a></li>
+                <li class = "navLink"><a href = "contact.html">Contact</a></li>
+                <li class = "navLink"><a href = "forum.html">Forum</a></li>
             </ul>
         </nav>
 
-        <main>
+        <main class = "mainpage">
         <!-- Contains the major content of the page
         Maybe be subdivided into sections and articles
         --> 
             <section id = "didyouknow"> <!-- fun fact section in the main page-->
                 <h2>Did You Know?</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus.</p>
-                <aside><img src="imgs/homepageimgs/c3po.png" alt="C3PO, the golden droid robot that is fluent in over 6 million languages" /></aside>
+                <aside><img class = "homepageimgs" id = "funfactimg" src="imgs/homepageimgs/c3po.png" alt="C3PO, the golden droid robot that is fluent in over 6 million languages" /></aside>
             </section>
 
         <!--
@@ -50,7 +50,7 @@
 The id attribute is used to point to a specific style declaration in a style sheet. 
         -->
 
-            <section id = "moviereviews">
+            <section id = "moviereviews" >
                 <h2>Featured Star Wars Movie Reviews</h2>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/fjTp65UNQUs" title="YouTube video player"
                     frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -71,7 +71,7 @@ The id attribute is used to point to a specific style declaration in a style she
                 nulla pretium in. Morbi ac dolor elementum, posuere mi a, convallis lacus. Pellentesque hendrerit ligula risus, ac
                 pellentesque diam gravida sit amet. Vestibulum efficitur urna eu viverra rhoncus. Sed eget auctor justo, vel fringilla
                 ipsum. Sed in nulla risus.</p>
-                <aside><img src="imgs/homepageimgs/hothbattle.jpg" alt="Hoth is a white snowy planet with a battle happening on its surface between two groups" /></aside>
+                <aside><img class = "homepageimgs" id = "planetofthedayimg" src="imgs/homepageimgs/hothbattle.jpg" alt="Hoth is a white snowy planet with a battle happening on its surface between two groups" /></aside>
             </section>
 
 
@@ -82,11 +82,12 @@ The id attribute is used to point to a specific style declaration in a style she
                 vulputate. Nullam ligula leo, feugiat in neque eget, tincidunt consectetur nulla. Proin dictum vulputate mauris eget
                 tincidunt. Donec pulvinar leo eu ex aliquet commodo sed in risus. Suspendisse nec ligula ut ligula commodo malesuada.
                 Nunc sed faucibus purus. Sed imperdiet fermentum dolor, id eleifend turpis consequat vitae.</p>
-                <aside><img src="imgs/homepageimgs/darthvaderhelmet.jpg" alt="Darth Vaders black helmet" /></aside>
+                <aside><img class = "homepageimgs" id = "charofthedayimg" src="imgs/homepageimgs/darthvaderhelmet.jpg" alt="Darth Vaders black helmet" /></aside>
             </section>
         </main>
 
-        <footer>
+
+        <footer class = "navigatorLists">
         <!--Typically contains
                 Author Information
                 Copyright
