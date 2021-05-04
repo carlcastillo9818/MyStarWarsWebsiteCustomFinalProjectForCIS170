@@ -1,6 +1,6 @@
 <!--
    Name : Carlos Castillo
-   Date : 4-16-21
+   Date : 5-1-21
    CIS 170 Website Design & Tools
 -->
 <!DOCTYPE html>
@@ -8,7 +8,7 @@
     <head>
         <title>SW Movie Temple</title>
         <meta charset = "utf-8"/>
-        <link rel="stylesheet" href = "css/mainpagegraphics.css"/>
+        <link rel="stylesheet" href = "css/graphics.css"/>
     </head>
     <body>
         <!-- fill in each of these semantic elements (header,nav,main,footer)-->
@@ -21,7 +21,7 @@
             <h1>Star Wars Movie Temple</h1>
         </header>
 
-        <nav class = "navigatorLists"> 
+        <nav class = "navigatorLists" id = "navBar"> 
         <!--Container of links for a site. Usually contains a Link Menu-->
             <ul> <!-- the link menu is here -->
                 <!-- anchor element - creates hyperlink to another page or file remember to include protocols http or https -->
@@ -34,12 +34,12 @@
             </ul>
         </nav>
 
-        <main class = "mainpage">
+        <main id = "mainpage">
         <!-- Contains the major content of the page
         Maybe be subdivided into sections and articles
         --> 
             <section id = "didyouknow"> <!-- fun fact section in the main page-->
-                <h2>Did You Know?</h2>
+                <h2 class  = "h2main">Did You Know?</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus.</p>
                 <aside><img class = "homepageimgs" id = "funfactimg" src="imgs/homepageimgs/c3po.png" alt="C3PO, the golden droid robot that is fluent in over 6 million languages" /></aside>
             </section>
@@ -51,17 +51,17 @@ The id attribute is used to point to a specific style declaration in a style she
         -->
 
             <section id = "moviereviews" >
-                <h2>Featured Star Wars Movie Reviews</h2>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/fjTp65UNQUs" title="YouTube video player"
+                <h2 class  = "h2main">Featured Star Wars Videos</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/h6aVWMb3J5M" title="YouTube video player"
                     frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/OBz7KAjZa5w" title="YouTube video player"
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/wakHdiFTUyg" title="YouTube video player"
                     frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
             </section>
 
             <section id="planetoftheday">
-                <h2>Planet of the Day</h2>
+                <h2 class  = "h2main">Planet of the Day</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eu odio quis leo venenatis imperdiet eu vitae leo.
                 Quisque fringilla, sem vel condimentum vestibulum, quam nisl sollicitudin nulla, ac blandit augue risus sit amet velit.
                 Nunc quis nunc vitae lorem consectetur volutpat sit amet eu quam. Suspendisse eros leo, mollis blandit urna nec, posuere
@@ -76,13 +76,27 @@ The id attribute is used to point to a specific style declaration in a style she
 
 
             <section id = "characteroftheday">
-                <h2>Character of the Day</h2>
+                <h2 class  = "h2main">Character of the Day</h2>
                 <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel nisi eget nibh sollicitudin pretium non vel arcu.
                 Integer pharetra nulla a diam feugiat venenatis. Duis tempor convallis augue vitae mattis. Mauris consectetur gravida
                 vulputate. Nullam ligula leo, feugiat in neque eget, tincidunt consectetur nulla. Proin dictum vulputate mauris eget
                 tincidunt. Donec pulvinar leo eu ex aliquet commodo sed in risus. Suspendisse nec ligula ut ligula commodo malesuada.
                 Nunc sed faucibus purus. Sed imperdiet fermentum dolor, id eleifend turpis consequat vitae.</p>
                 <aside><img class = "homepageimgs" id = "charofthedayimg" src="imgs/homepageimgs/darthvaderhelmet.jpg" alt="Darth Vaders black helmet" /></aside>
+            </section>
+
+            <section id = "twitterFeed"> <!-- embedded timeline from twitter-->
+                <h2 class  = "h2main" id = "twitterbox" >Star Wars Twitter News</h2>
+                <a class="twitter-timeline" data-lang="en" data-width="600" data-height="500" data-theme="dark" 
+                href="https://twitter.com/starwars?ref_src=twsrc%5Etfw">Tweets by starwars</a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </section>
+
+            <section id = "starWarsGame">
+                <h2 class  = "h2main" id = "gamesbox">Star Wars Browser Games</h2>
+                <iframe src="https://itch.io/embed/139709" height="167" width="552" frameborder="0"><a href="https://tassilo.itch.io/scavengerrun">Rey&#039;s Scavenger Run by Tassilo</a></iframe>
+                <iframe src="https://itch.io/embed/631727" height="167" width="552" frameborder="0"><a href="https://rodellison.itch.io/baby-yodas-escape">Baby Yoda&#039;s Escape by rodellison</a></iframe>
+                <iframe src="https://itch.io/embed/968655" height="167" width="552" frameborder="0"><a href="https://magicaless.itch.io/mara-jade-the-hand">Mara Jade - The Hand by MagicaLess</a></iframe>
             </section>
         </main>
 
@@ -93,14 +107,15 @@ The id attribute is used to point to a specific style declaration in a style she
                 Copyright
                 Contact 
                 Terms of Use links-->
-            <ul>
+            <ul id = "bottomList">
                 <!-- a is anchor element - creates hyperlink to another page or file remember to include protocols http or https -->
                 <!-- relative hyperlink (links to pages on same computer) -->
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a class = "bottomHyperLinks" href="about.html">About</a></li>
+                <li><a  class = "bottomHyperLinks" href="contact.html">Contact</a></li>
+                <li><p>&copy; Copyright 2021 StarWarsMovieTemple.com</p></li>
             </ul>
             <br /><!-- go to next line with line break tag-->
-            <p>&copy; Copyright 2021 StarWarsMovieTemple.com</p>
+
         </footer>
     </body>
 </html>

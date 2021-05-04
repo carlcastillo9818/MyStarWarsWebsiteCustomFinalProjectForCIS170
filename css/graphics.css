@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
 
+/*
+   Name : Carlos Castillo
+   Date : 5-1-21
+   CIS 170 Website Design & Tools
+*/
+
 
 *
 {
@@ -15,6 +21,9 @@ body
 {
     background-color: rgb(0, 0, 0); /* set this to red temporarily*/
     color: white;
+    background-image: url("../imgs/homepageimgs/spacebg4.jpg");
+    background-color: black;
+ 
 }
 
 header
@@ -26,52 +35,57 @@ header
     padding-bottom: 10px;
     display: grid; /*using the grid layout but many others exist.  stick to the grid for this project */
     grid-template-columns:1fr 70%; /* n (number of) columns of size 1fr.  fr means what fraction do you want to use */
-    background-color: rgb(0, 0, 0);
     box-shadow:-1px -5px 30px 10px #67A283; /* lets you change the surrounding shadow (v-offset, h-offset, blur, spread) of the element*/
 }
 
 #headerlogo
 {
-    margin:32px 10%;
+    margin:32px 20%;
+    size: 25em;
 }
 
 h1
 {
-    font-size: 4em;
+    font-size: 4.5em;
     font-family: "Zen Dots", sans-serif;
     /*The width property sets the width of an element.
 The width of an element does not include padding, borders, or margins!*/
-    width: 70%;
+    width: 60%;
     margin-top: 1%;
-    color: #67A283; 
-    margin-left: 5%;
+    color:#67A283; 
+    margin-left: 10%;
+    text-shadow: 4px 4px 7px #ffffff;
 
 }
 
+#navBar
+{
+    border:1em #75A4E6 double;
+    border-width: 0.2em;
+}
 
 .navigatorLists /* affects the nav and the footer elements */
 {
     text-align: center; /* push all the text to the center */
-    background-color: #171717;
     font-size: 1.5em;
+    background-color: #171717 ;
 }
 
-.navLink
+.navLink /* affects list items*/
 {
     display: inline-block; /* using inline-block allows the navigation menu to go side by side (one way to do it)*/
     margin-left: 3%;
     margin-right: 3%;
 }
 
-/* change the color of the hyperlinks by modifying anchor elements */
+/* modifying anchor elements (hyperlinks)*/
 a
 {
     color: #75A4E6;
     font-family: "Zen Dots", sans-serif;
-   
 }
 
-.mainpage
+#mainpage
 {
     /* shorthand border property for 3 values (width ,color, style)*/
     margin: 25px 2%; /* adjust top,bottom,left,and right margins of this element (main) */
@@ -79,9 +93,11 @@ a
     grid-template-columns: auto auto auto auto; /* four columns of automatic size.  fr means what fraction do you want to use */
     column-gap:15%; /* adjust the space between each column in the grid */
     row-gap: 35px; /* adjust the space between each row in the grid*/
+    border:2em #75A4E6 double;
+    border-width: 0.2em;
 }
 
-h2
+.h2main
 {
     background-color: #67A283;
 }
@@ -92,6 +108,17 @@ section
     color:white;
 }
 
+.h2main
+{
+    border-radius: 25px;
+
+}
+
+p
+{
+    font-size: 0.8em;
+}
+
 #didyouknow
 {
     text-align: center;
@@ -99,7 +126,7 @@ section
     grid-row: 1 / 2;
     margin-left: 15%;
     margin-right: -15%;
-    margin-top: 1px;
+    margin-top: 10px;
     margin-bottom:30px;
 }
 
@@ -118,8 +145,9 @@ iframe
     text-align: center;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
-    margin-left: 18%;
-    margin-right: -18%;
+    margin-left: 35%;
+    margin-top:10px;
+    margin-right: -35%;
 
 }
 
@@ -128,8 +156,9 @@ iframe
     text-align: center;
     grid-column: 2/3;
     grid-row: 2 / 2;
-    margin-left: 18%;
-    margin-right: -18%;
+    margin-left: 35%;
+    margin-right: -35%;
+
 }
 
 #characteroftheday
@@ -141,7 +170,40 @@ iframe
     margin-right: -15%;
     margin-top: -1px;
     margin-bottom:30px;
+
 }
+
+#twitterFeed
+{
+    grid-column: 1 / 2; /* start at column (imaginary line) 1 and end at column 2 */
+    grid-row: 4; 
+    margin-left: 10%;
+    margin-right: -10%;
+    margin-top: 2px;
+    margin-bottom:30px;
+    text-align: center;
+}
+
+#twitterbox
+{
+    margin-bottom: 5%;
+}
+
+
+#starWarsGame
+{
+    grid-column: 2 / 4; /* start at column (imaginary line) 2 and end at column 4 */
+    grid-row: 4;
+    margin-left: 15%;
+    margin-right: -15%;
+    text-align: center;
+}
+
+#gamesbox
+{
+    margin-bottom: 2%;
+}
+
 
 /* the dot . denotes class and hashtag # denotes id */
 #charofthedayimg
@@ -158,4 +220,100 @@ iframe
 {
     box-shadow:-1px 1px 20px 5px #67A283; /* lets you change the surrounding shadow (v-offset, h-offset, blur, spread) of the element*/
  
+}
+
+
+#bottomList
+{
+    font-size: medium;
+    font-family: "Zen Dots", sans-serif;
+
+}
+
+.h2charslocations
+{
+    text-align: center;
+    border-radius: 2px;
+    margin: 20px 1%;
+    background-color: #67A283;
+    font-family: "Zen Dots", sans-serif;
+
+}
+
+.movietitles
+{
+    text-align:center;
+    background-color: #000000;
+    color: white;
+    margin: 20px 1%;
+    border:0.5em #67A283 solid;
+    font-family: "Zen Dots", sans-serif;
+
+}
+
+.movie
+{
+    /* shorthand border property for 3 values (width ,color, style)*/
+    margin: 25px 2%; /* adjust top,bottom,left,and right margins of this element (main) */
+    display: grid; /* we are using the grid layout but many others exist.  stick to the grid for the project */
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* four columns of automatic size.  fr means what fraction do you want to use */
+    column-gap:15%; /* adjust the space between each column in the grid */
+    row-gap: 35px; /* adjust the space between each row in the grid*/
+    border:2em #67A283 double;
+    border-width: 0.2em; 
+}
+
+.char1
+{
+    text-align: center;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    margin-left: 15%;
+    margin-right: -15%;
+    margin-top: 10px;
+    margin-bottom:30px;
+}
+
+.char2
+{
+    text-align: center;
+    width: 100%;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    margin-left: -10%;
+    margin-right: 10%;
+    margin-top:10px;
+}
+
+.char3
+{
+    text-align: center;
+    width: 100%;
+    grid-column: 3 / 3;
+    grid-row: 1 / 2;
+    margin-left: -25%;
+    margin-right: 25%;
+    margin-top:10px;
+
+}
+
+.planet
+{
+    text-align: center;
+    grid-column: 1 / 4;
+    grid-row: 2;
+    width:100%;
+    margin-top: -40px;
+    margin-bottom: 40px;
+}
+
+.planetimg
+{
+    width: 50%;
+}
+
+.planetparagraphdescription
+{
+    width: 50%;
+    margin-left: 25%;
 }
