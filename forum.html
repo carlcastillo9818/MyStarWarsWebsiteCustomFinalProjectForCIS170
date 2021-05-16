@@ -1,10 +1,13 @@
+<!-- Name : Carlos Castillo
+Date : 5-14-21
+CIS 170 Website Design & Tools
+-->
 <!DOCTYPE html>
 <html lang = "en">
     <head>
         <title>SWTemple Forum</title>
         <meta charset = "utf-8"/>
-        <link rel="stylesheet" href="css/mainpagegraphics.css" />
-
+        <link rel="stylesheet" href="css/graphics.css" />
     </head>
     <body>
         <!-- fill in each of these semantic elements (header,nav,main,footer)-->
@@ -13,114 +16,83 @@
         Company Logo
         Company Name / Page Name
         Banner-->
-            <img src="imgs/lightsaberjeditemple.jpg" alt="Lightsaber weapon, it has a hilt to put your hand on and a glowing green saber." />
+            <img id = "headerlogo" src="imgs/lightsaberjeditemple.jpg" alt="Lightsaber weapon, it has a hilt to put your hand on and a glowing green saber." />
             <h1>Star Wars Movie Temple</h1>
         </header>
 
-        <nav> 
+        <nav class = "navigatorLists" id = "navBar"> 
         <!--Container of links for a site. Usually contains a Link Menu-->
             <ul>
                 <!-- anchor element - creates hyperlink to another page or file remember to include protocols http or https -->
-                <li><a href="index.html">Home</a></li>
+                <li class="navLink"><a href="index.html">Home</a></li>
                 <!-- relative hyperlink (links to pages on same computer) -->
-                <li><a href="about.html">About</a></li>
-                <li><a href="movieCharsAndLocations.html">Movie Characters & Locations</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="forum.html">Forum</a></li>
+                <li class="navLink"><a href="about.html">About</a></li>
+                <li class="navLink"><a href="movieCharsAndLocations.html">Movie Characters & Locations</a></li>
+                <li class="navLink"><a href="contact.html">Contact</a></li>
+                <li class="navLink"><a href="forum.html">Forum</a></li>
             </ul>
 
             <!-- anchor element - creates hyperlink to another page or file-->
         </nav>
 
-        <main>
+        <main id = "forumMain">
         <!-- Contains the major content of the page
         Maybe be subdivided into sections and articles
-        -->
-            <section>
-                <h2>The Forum</h2>
+        -->      
+            <section id = "ULForum">
+                <h3 id = "forumheader">Forum</h3>
+                <h3 id = "lastpostmadeheader">Last Post</h3>
             </section>
-            
-            <section>
-                <ul>
-                    <li>Forum</li>
-                    <li>Topics</li>
-                    <li>Posts</li>
-                    <li>Last Post</li>
+
+            <section id = "discussionsSection">
+                <ul id = "uldiscussions">
+                    <li class = "listItemDiscussions"><a class = "forumliHyperLink" href="prequelDiscussion.html">Prequel Trilogy Discussion</a></li>
+                    <li class = "listItemDiscussions"><p>Talk about everything related to the prequel trilogy!</p></li>
+                    <li class = "lineSeparator"><p>lineseparator</p></li>
+                    <li class= "listItemDiscussions"><a class = "forumliHyperLink"  href="origDiscussion.html">Original Trilogy Discussion</a></li>
+                    <li class = "listItemDiscussions"><p>Talk about everything related to the original trilogy!</p></li>
+                    <li class = "lineSeparator"><p>lineseparator</p></li>
+                    <li class="listItemDiscussions"><a class = "forumliHyperLink"  href="sequelDiscussion.html">Sequel Trilogy Discussion</a></li>
+                    <li class = "listItemDiscussions"><p>Talk about everything related to the sequel trilogy.</p></li>
+                    <li class = "lineSeparator"><p>lineseparator</p></li>
+                    <li class="listItemDiscussions"><a class = "forumliHyperLink"  href="userIntroDiscussion.html">User Introductions</a></li>
+                    <li class = "listItemDiscussions"><p>Introduce yourself!</p></li>
+                    <li class = "lineSeparator"><p>lineseparator</p></li>
+                    <li class="listItemDiscussions"><a class = "forumliHyperLink" href="offTopicDiscussion.html">Off Topic Discussion</a></li>
+                    <li class = "listItemDiscussions"><p>Talk about other topics outside of Star Wars.</p></li>
+                </ul>
+
+                <ul id = "ulpostsmade">
+                    <li class = "listItemPosts"><p class = "paragraphitem">No Posts Yet</p></li>
+                    <li id = "li2Posts" class =  "listItemPosts"><p class = "paragraphitem">No Posts Yet</p></li>
+                    <li id = "li3Posts" class =  "listItemPosts"><p class = "paragraphitem">No Posts Yet</p></li>
+                    <li id = "li4Posts" class =  "listItemPosts"><p class = "paragraphitem">No Posts Yet</p></li>
+                    <li id = "li5Posts" class =  "listItemPosts"><p class = "paragraphitem">No Posts Yet</p></li>
+                </ul>
+
+                <ul id = "ulImages">
+                    <li class = "ImageLI"><img id = "jediImage" src = "imgs/forumpageimgs/jediorder.png" alt = "Black logo with lightsabers in an upright position"/></li>
+                    <li class = "ImageLI"><img id = "empireImage" src = "imgs/forumpageimgs/empire.png" alt = "Black and white logo with gear looking shapes"/></li>
+                    <li class = "ImageLI"><img id = "bb8Image" src = "imgs/forumpageimgs/bb8.png" alt ="Small round robot with white and orange colors on its body."/></li>
+                    <li class = "ImageLI"><img id = "userIntroImage" src = "imgs/forumpageimgs/userintro.png" alt ="Black and white message square block."/></li>
+                    <li class = "ImageLI"><img id = "offTopicImage" src = "imgs/forumpageimgs/offtopic.png" alt ="Black and white book shaped icon."/></li>
                 </ul>
             </section>
+        </main>
 
-            <section>
-                <h3>Prequel Trilogy Discussion</h3>
-                <ul>
-                    <li>0</li>
-                    <li>0</li>
-                    <li>No Topics</li>
-                </ul>
-                <p>About everything related to Episodes 1 - 3</p>
-
-            </section>
-
-            <section>
-                <h3>Original Trilogy Discussion</h3>
-                <ul>
-                    <li>0</li>
-                    <li>0</li>
-                    <li>No Topics</li>
-                </ul>
-                <p>About everything related to Episodes 4 - 6</p>
-
-            </section>
-
-            <section>
-                <h3>Sequel Trilogy Discussion</h3>
-                <ul>
-                    <li>0</li>
-                    <li>0</li>
-                    <li>No Topics</li>
-                </ul>
-                <p>About everything related to Episodes 7 - 9</p>
-
-            </section>
-
-            <section>
-                <h3>User Introductions</h3>
-                <ul>
-                    <li>0</li>
-                    <li>0</li>
-                    <li>No Topics</li>
-                </ul>
-                <p>Introduce yourself to the forum community!</p>
-
-            </section>
-
-            <section>
-                <h3>Off Topic Discussion</h3>
-                <ul>
-                    <li>0</li>
-                    <li>0</li>
-                    <li>No Topics</li>
-                </ul>
-                <p>About anything that isn't related to the Star Wars films!</p>
-
-            </section>
-            </main>
-
-        <footer>
+        <footer class = "navigatorLists">
         <!--Typically contains
                 Author Information
                 Copyright
                 Contact 
                 Terms of Use links-->
-            
-            <ul>
+            <ul id = "bottomList">
                 <!-- a is anchor element - creates hyperlink to another page or file remember to include protocols http or https -->
                 <!-- relative hyperlink (links to pages on same computer) -->
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a class = "bottomHyperLinks" href="about.html">About</a></li>
+                <li><a class = "bottomHyperLinks" href="contact.html">Contact</a></li>
+                <li><p>&copy; Copyright 2021 StarWarsMovieTemple.com</p></li>
             </ul>
-            <br /><!-- go to next line with line break tag-->
-            <p>&copy; Copyright 2021 StarWarsMovieTemple.com</p>
-
         </footer>
     </body>
 </html>

@@ -2,8 +2,9 @@
 
 /*
    Name : Carlos Castillo
-   Date : 5-1-21
+   Date : 5-16-21
    CIS 170 Website Design & Tools
+   Final Project CSS file
 */
 
 
@@ -17,241 +18,234 @@
 the width and height properties (and min/max properties) includes content, padding and border.*/
 }  
 
-body
+body /* body element of every page in my website*/
 {
-    background-color: rgb(0, 0, 0); /* set this to red temporarily*/
-    color: white;
-    background-image: url("../imgs/homepageimgs/spacebg4.jpg");
-    background-color: black;
- 
+    color: white; /* the text color */
+    background-image: url("../imgs/homepageimgs/spacebg4.jpg"); /* the background image will be a space background */
+    background-color: black;  /* the background color is set to a color already in case the background img isnt found */
 }
 
-header
+header /* header element of every page in my website*/
 {
     /* shorthand margin property for two values
     first value affects top and bottom (use px for this)
     second value affects left and right margins (use % for this)*/
     margin: 40px 0.5%;
-    padding-bottom: 10px;
+    padding-bottom: 10px; /* set the bottom padding space with px */
     display: grid; /*using the grid layout but many others exist.  stick to the grid for this project */
     grid-template-columns:1fr 70%; /* n (number of) columns of size 1fr.  fr means what fraction do you want to use */
     box-shadow:-1px -5px 30px 10px #67A283; /* lets you change the surrounding shadow (v-offset, h-offset, blur, spread) of the element*/
 }
 
-#headerlogo
+#headerlogo /* image logo at the top of every webpage of my site*/
 {
+    /* shorthand margin property for two values
+    first value affects top and bottom (use px for this)
+    second value affects left and right margins (use % for this)*/
     margin:32px 20%;
-    size: 25em;
+    width: 100%; /* alter the width of the image logo */
 }
 
-h1
+h1 /* heading 1 element of every page in my website*/
 {
-    font-size: 4.5em;
-    font-family: "Zen Dots", sans-serif;
+    font-size: 4.5em; /* set the fonts size using em measurement*/
+    font-family: "Zen Dots", sans-serif; /* set the fonts family of this heading element*/
     /*The width property sets the width of an element.
 The width of an element does not include padding, borders, or margins!*/
-    width: 60%;
-    margin-top: 1%;
-    color:#67A283; 
-    margin-left: 10%;
-    text-shadow: 4px 4px 7px #ffffff;
+    width: 60%; /* sets the width of an element. */
+    margin-top: 1%; /* set the top margin spacing with % measurement*/
+    color:#67A283;  /* set the color of the heading TEXT */
+    margin-left: 10%; /* set the left margin spacing with % measurement*/
+    text-shadow: 4px 4px 7px #ffffff; /* adds shadow to text, includes 
+    the position of the horizontal shadow, the position of the vertical shadow, blur radius, and color of the shadow */
 
 }
 
-#navBar
+#navBar /* only the top navigation bar links of my site*/
 {
-    border:1em #75A4E6 double;
-    border-width: 0.2em;
+    border:1em #75A4E6 double; /* set border width, color, and style in border shorthand*/
+    border-width: 0.2em; /* sets the width of the four borders */
 }
 
-.navigatorLists /* affects the nav and the footer elements */
+.navigatorLists /* navigation bar hyperlinks AND footer hyperlinks of my site*/
 {
     text-align: center; /* push all the text to the center */
-    font-size: 1.5em;
-    background-color: #171717 ;
+    font-size: 1.5em; /* set the fonts size using em measurement*/
+    background-color: #171717 ; /* the background color is set to a color */
 }
 
-.navLink /* affects list items*/
+.navLink /* each list item in the unordered list in the navigation bar*/
 {
     display: inline-block; /* using inline-block allows the navigation menu to go side by side (one way to do it)*/
-    margin-left: 3%;
-    margin-right: 3%;
-}
+    margin-left: 3%; /* set the left margin spacing with % measurement*/
+    margin-right: 3%; /* set the right margin spacing with % measurement*/
+} 
 
-/* modifying anchor elements (hyperlinks)*/
+/* Anchor hyperlink elements */
 a
 {
-    color: #75A4E6;
-    font-family: "Zen Dots", sans-serif;
+    color: #75A4E6; /* set the color of the hyperlink */
+    font-family: "Zen Dots", sans-serif; /* set the fonts family of this anchor element*/
 }
 
-#mainpage
+#mainpage /* main HOME page */
 {
     /* shorthand border property for 3 values (width ,color, style)*/
-    margin: 25px 2%; /* adjust top,bottom,left,and right margins of this element (main) */
+    margin: 25px 2%; /* adjust top,bottom,left,and right margins of this element (main page) */
     display: grid; /* we are using the grid layout but many others exist.  stick to the grid for the project */
     grid-template-columns: auto auto auto auto; /* four columns of automatic size.  fr means what fraction do you want to use */
     column-gap:15%; /* adjust the space between each column in the grid */
     row-gap: 35px; /* adjust the space between each row in the grid*/
-    border:2em #75A4E6 double;
-    border-width: 0.2em;
+    border:2em #67A283 double; /* set border width, color, and style in border shorthand*/
+    border-width: 0.2em; /* sets the width of the four borders */
 }
 
-.h2main
+.h2main /* heading 2 in the main home page */
 {
-    background-color: #67A283;
+    background-color: #67A283;  /* the background color is set to a color */
+    border-radius: 25px; /* provides round corners */
+
 }
 
-section
+section /* sections of every web page on my site */
 {
-    font-family: "Zen Dots", sans-serif;
-    color:white;
+    font-family: "Zen Dots", sans-serif;  /* set the fonts family*/
+    color:white;  /* set the color of text */
 }
 
-.h2main
+p /* paragraph elements */
 {
-    border-radius: 25px;
-
+    font-size: 0.8em; /* set the fonts size using em measurement*/
 }
 
-p
+#didyouknow /* section in the home page */
 {
-    font-size: 0.8em;
+    text-align: center;  /* set horizontal alignment to center */
+    grid-column: 1 / 2; /*sets a grid item's size and location in a grid layout */
+    grid-row: 1 / 2; /*sets a grid item's size and location in a grid layout */
+    margin-left: 15%; /* set the left margin spacing with % measurement*/
+    margin-right: -15%; /* set the right margin spacing with % measurement*/
+    margin-top: 10px; /* set the top margin spacing with px measurement*/
+    margin-bottom:30px; /* set the bottom margin spacing with px measurement*/
 }
 
-#didyouknow
+#funfactimg /* an image in the home page */
 {
-    text-align: center;
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-    margin-left: 15%;
-    margin-right: -15%;
-    margin-top: 10px;
-    margin-bottom:30px;
+    margin: 20px 20%; /* adjust top,bottom,left,and right margins of this element (main page) */
 }
 
-#funfactimg
+iframe /*  inline frame around the videos on home page */
 {
-    margin: 20px 20%;
+    width: 100%;  /* sets the width of an element. */
 }
 
-iframe
+#moviereviews /* section in the home page */
 {
-    width: 100%;
+    text-align: center;  /* set horizontal alignment to center */
+    grid-column: 2 / 3; /*sets a grid item's size and location in a grid layout */
+    grid-row: 1 / 2; /*sets a grid item's size and location in a grid layout */
+    margin-left: 35%;  /* set the left margin spacing with % measurement*/
+    margin-top:10px; /* set the top margin spacing with px measurement*/
+    margin-right: -35%;  /* set the right margin spacing with % measurement*/
 }
 
-#moviereviews
+#planetoftheday /* section in the home page */
 {
-    text-align: center;
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
-    margin-left: 35%;
-    margin-top:10px;
-    margin-right: -35%;
+    text-align: center; /* set horizontal alignment to center */
+    grid-column: 2 / 3; /*sets a grid item's size and location in a grid layout */
+    grid-row: 2 / 2; /*sets a grid item's size and location in a grid layout */
+    margin-left: 35%; /* set the left margin spacing with % measurement*/
+    margin-right: -35%; /* set the right margin spacing with % measurement*/
 
 }
 
-#planetoftheday
+#characteroftheday   /* section in the home page */
 {
-    text-align: center;
-    grid-column: 2/3;
-    grid-row: 2 / 2;
-    margin-left: 35%;
-    margin-right: -35%;
-
+    grid-column: 1 / 2; /*sets a grid item's size and location in a grid layout */
+    grid-row: 2; /*sets a grid item's size and location in a grid layout */
+    text-align: center;  /* set horizontal alignment to center */
+    margin-left: 15%; /* set the left margin spacing with % measurement*/
+    margin-right: -15%;  /* set the right margin spacing with % measurement*/
+    margin-top: -1px;  /* set the top margin spacing with px measurement*/
+    margin-bottom:30px;  /* set the bottom margin spacing with px measurement*/
 }
 
-#characteroftheday
-{
-    grid-column: 1 / 2; /* start at column (imaginary line) 1 and end at column 2 */
-    grid-row: 2; /* start at row 2 and end at row 2*/
-    text-align: center;
-    margin-left: 15%;
-    margin-right: -15%;
-    margin-top: -1px;
-    margin-bottom:30px;
-
-}
-
-#twitterFeed
+#twitterFeed /* section in the home page */
 {
     grid-column: 1 / 2; /* start at column (imaginary line) 1 and end at column 2 */
-    grid-row: 4; 
-    margin-left: 10%;
-    margin-right: -10%;
-    margin-top: 2px;
-    margin-bottom:30px;
-    text-align: center;
+    grid-row: 4;  /*sets a grid item's size and location in a grid layout */
+    margin-left: 10%; /* set the left margin spacing with % measurement*/
+    margin-right: -10%; /* set the right margin spacing with % measurement*/
+    margin-top: 2px;  /* set the top margin spacing with px measurement*/
+    margin-bottom:30px; /* set the bottom margin spacing with px measurement*/
+    text-align: center;  /* set horizontal alignment to center */
 }
 
-#twitterbox
+#twitterbox /* heading 2 in the home page */
 {
-    margin-bottom: 5%;
+    margin-bottom: 5%;  /* set the bottom margin spacing with px measurement*/
 }
 
 
-#starWarsGame
+#starWarsGame /* section in the home page */ 
 {
     grid-column: 2 / 4; /* start at column (imaginary line) 2 and end at column 4 */
-    grid-row: 4;
-    margin-left: 15%;
-    margin-right: -15%;
-    text-align: center;
+    grid-row: 4;  /*sets a grid item's size and location in a grid layout */
+    margin-left: 15%; /* set the left margin spacing with % measurement*/
+    margin-right: -15%; /* set the right margin spacing with % measurement*/
+    text-align: center; /* set horizontal alignment to center */
 }
 
-#gamesbox
+#gamesbox /* heading 2 in the home page */
 {
-    margin-bottom: 2%;
-}
+    margin-bottom: 2%; /* set the bottom margin spacing with % measurement*/
+} 
 
-
-/* the dot . denotes class and hashtag # denotes id */
-#charofthedayimg
+#charofthedayimg /* image in main page */
 {
-    margin-top: 20px;
+    margin-top: 20px; /* set the top margin spacing with px measurement*/
 }
 
-#planetofthedayimg
+#planetofthedayimg /* image in main page */
 {
-    margin-top: 20px;
+    margin-top: 20px; /* set the top margin spacing with px measurement*/
 }
 
-.homepageimgs
+.homepageimgs /* images in main page */
 {
     box-shadow:-1px 1px 20px 5px #67A283; /* lets you change the surrounding shadow (v-offset, h-offset, blur, spread) of the element*/
  
 }
 
-
-#bottomList
+#bottomList /* unordered list in the footer */
 {
-    font-size: medium;
-    font-family: "Zen Dots", sans-serif;
+    font-size: medium; /* set the fonts size*/
+    font-family: "Zen Dots", sans-serif;  /* set the fonts family */
 
 }
 
-.h2charslocations
+.h2charslocations /* heading 2   in movie chars and locations page*/
 {
-    text-align: center;
-    border-radius: 2px;
-    margin: 20px 1%;
-    background-color: #67A283;
-    font-family: "Zen Dots", sans-serif;
+    text-align: center; /* set horizontal alignment to center */
+    border-radius: 2px; /* set the radius of the element's corners. */
+    margin: 20px 1%; /* set margin top,bottom and margin left,right */
+    background-color: #67A283; /* the background color is set to a color */
+    font-family: "Zen Dots", sans-serif;  /* set the fonts family */
+}
+
+.movietitles /* heading 3   in movie chars and locations page*/
+{
+    border-radius: 2px; /* set the radius of the element's corners. */
+    text-align:center;  /* set horizontal alignment to center */
+    background-color: #000000; /* the background color is set to a color */
+    color: white; /* set text color */
+    margin: 20px 1%; /* set margin top,bottom and margin left,right */
+    border:0.5em #67A283 solid; /* set border width, color, and style in border shorthand*/
+    font-family: "Zen Dots", sans-serif; /* set the fonts family */
 
 }
 
-.movietitles
-{
-    text-align:center;
-    background-color: #000000;
-    color: white;
-    margin: 20px 1%;
-    border:0.5em #67A283 solid;
-    font-family: "Zen Dots", sans-serif;
-
-}
-
-.movie
+.movie /* section in movie chars and locations page*/
 {
     /* shorthand border property for 3 values (width ,color, style)*/
     margin: 25px 2%; /* adjust top,bottom,left,and right margins of this element (main) */
@@ -259,61 +253,552 @@ iframe
     grid-template-columns: 1fr 1fr 1fr 1fr; /* four columns of automatic size.  fr means what fraction do you want to use */
     column-gap:15%; /* adjust the space between each column in the grid */
     row-gap: 35px; /* adjust the space between each row in the grid*/
-    border:2em #67A283 double;
-    border-width: 0.2em; 
+    border:2em #67A283 double; /* set border width, color, and style in border shorthand*/
+    border-width: 0.2em; /* Set a width for the borders with em measurement */
 }
 
-.char1
+.char1  /* section in movie chars and locations page*/
 {
-    text-align: center;
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-    margin-left: 15%;
+    text-align: center; /* set horizontal alignment to center */
+    grid-column: 1 / 2; /*sets a grid item's size and location in a grid layout */
+    grid-row: 1 / 2; /*sets a grid item's size and location in a grid layout */
+    margin-left: 15%; /* set each margin -> top,bottom and margin left,right */
     margin-right: -15%;
     margin-top: 10px;
     margin-bottom:30px;
 }
 
-.char2
+.char2 /* section in movie chars and locations page*/
 {
-    text-align: center;
-    width: 100%;
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
-    margin-left: -10%;
+    text-align: center; /* set horizontal alignment to center */
+    width: 100%; /* set width with % measurement*/
+    grid-column: 2 / 3; /*sets a grid item's size and location in a grid layout */
+    grid-row: 1 / 2; /*sets a grid item's size and location in a grid layout */
+    margin-left: -10%; /* set each margin -> top,bottom and margin left,right */
     margin-right: 10%;
     margin-top:10px;
 }
 
-.char3
+.char3 /* section in movie chars and locations page*/
 {
-    text-align: center;
-    width: 100%;
-    grid-column: 3 / 3;
-    grid-row: 1 / 2;
-    margin-left: -25%;
+    text-align: center; /* set horizontal alignment to center */
+    width: 100%; /* set width with % measurement*/
+    grid-column: 3 / 3; /*sets a grid item's size and location in a grid layout */
+    grid-row: 1 / 2; /*sets a grid item's size and location in a grid layout */
+    margin-left: -25%; /* set each margin -> top,bottom and margin left,right */
     margin-right: 25%;
     margin-top:10px;
 
 }
 
-.planet
+.planet /* section in movie chars and locations page*/
 {
-    text-align: center;
-    grid-column: 1 / 4;
-    grid-row: 2;
-    width:100%;
-    margin-top: -40px;
+    text-align: center; /* set horizontal alignment to center */
+    grid-column: 1 / 4;  /*sets a grid item's size and location in a grid layout */
+    grid-row: 2;  /*sets a grid item's size and location in a grid layout */
+    width:100%; /* set width with % measurement*/
+    margin-top: -40px; /* set each margin -> top,bottom */
     margin-bottom: 40px;
 }
 
-.planetimg
+.planetimg /* image in movie chars and locations page*/
 {
-    width: 50%;
+    width: 50%; /* set width with % measurement*/
 }
 
-.planetparagraphdescription
+.planetparagraphdescription /* paragraph in movie chars and locations page*/
 {
-    width: 50%;
-    margin-left: 25%;
+    width: 50%;  /* set width with % measurement*/
+    margin-left: 25%; /* set left margin */
 }
+
+.epcharimgs /* paragraph in movie chars and locations page*/
+{
+    width: 100%;  /* set width with % measurement*/
+}
+
+#macewinduchar /* section in movie chars and locations page*/
+{
+    margin-left: 40%; /* set left margin with % measurement */
+    margin-right: -40%;  /* set right margin with % measurement */
+    width: 125%;  /* set width with % measurement*/
+}
+
+#darthsidiouschar  /* section in movie chars and locations page*/
+{
+    margin-left: 30%; /* set left margin with % measurement */
+    margin-right: -30%;  /* set right margin with % measurement */
+    width: 200%;  /* set width with % measurement*/
+}
+
+#generalgrievouschar /* section in movie chars and locations page*/
+{
+    margin-left: 80%; /* set left margin and right margin with % measurement */
+    margin-right: -80%;
+    width: 220%;  /* set width with % measurement*/
+}
+
+#mustafar /* section in movie chars and locations page*/
+{
+    margin-left: 22%;  /* set left margin and right margin with % measurement */
+    margin-right: -22%;
+}
+
+#darthvaderchar /* section in movie chars and locations page*/
+{
+    margin-left: 1%;  /* set left margin and right margin with % measurement */
+    margin-right: -1%;
+    width: 275%;  /* set width with % measurement*/
+}
+
+#bobafettchar /* section in movie chars and locations page*/
+{
+    width: 150%;   /* set width with % measurement*/
+    margin-left: 110%;  /* set left margin and right margin with % measurement */
+    margin-right: -110%;
+}
+
+#landoep5char /* section in movie chars and locations page*/
+{
+    width: 150%;    /* set width with % measurement*/
+    margin-left: 125%;  /* set left margin and right margin with % measurement */
+    margin-right: -125%;
+}
+
+#bespin /* section in movie chars and locations page*/
+{
+    margin-left: 20%; /* set left margin and right margin with % measurement */
+    margin-right: -20%;
+}
+
+#endor /* section in movie chars and locations page*/
+{
+    margin-left: 5%;  /* set left margin and right margin with % measurement */
+    margin-right: -5%;
+}
+
+#wicketep6char  /* section in movie chars and locations page*/
+{
+    width: 150%;   /* set width with % measurement*/
+    margin-left: -5%;  /* set left margin and right margin with % measurement */
+    margin-right: 5%;   
+}
+
+/* section in movie chars and locations page*/
+#lukeskywalkerep6char
+{
+    width: 100%; /* set width with % measurement*/
+    margin-left: 5%;/* set left margin and right margin with % measurement */
+    margin-right: -5%;      
+}
+
+#finnep7char/* section in movie chars and locations page*/
+{
+    width: 210%;  /* set width with % measurement*/
+    margin-left: -2%;/* set left margin and right margin with % measurement */
+    margin-right: 2%;
+}
+
+#bb8ep7char/* section in movie chars and locations page*/
+{
+    width: 250%;   /* set width with % measurement*/
+    margin-left: 75%;/* set left margin and right margin with % measurement */
+    margin-right: -75%;  
+}
+
+#takodana /* section in movie chars and locations page*/
+{
+    margin-top: 10px;
+    margin-left: 15%; /* set top margin, left margin and right margin with % measurement */
+    margin-right: -15%;  
+}
+
+#kyloep8char /* section in movie chars and locations page*/
+{
+    width: 170%;   /* set width with % measurement*/
+    margin-left: 20%; /* set left margin and right margin with % measurement */
+    margin-right: -20%;
+}
+
+#lukeep8char /* section in movie chars and locations page*/
+{
+    width: 215%;  /* set width with % measurement*/
+    margin-left: 90%;/* set left margin and right margin with % measurement */
+    margin-right: -90%;
+}
+
+#ahchto/* section in movie chars and locations page*/
+{
+    margin-left: 15%;/* set top margin, left margin and right margin with % measurement */
+    margin-right: -15%;
+    margin-top: 20px;
+}
+
+#zoriiep9char/* section in movie chars and locations page*/
+{
+    width: 200%;/* set width with % measurement*/
+    margin-left: 10%;/* set left margin and right margin with % measurement */
+    margin-right: -10%;
+}
+
+#landoep9char/* section in movie chars and locations page*/
+{
+    width: 200%; /* set width with % measurement*/
+    margin-left: 50%;/* set left margin and right margin with % measurement */
+    margin-right: -50%;
+}
+
+#jannahep9char/* section in movie chars and locations page*/
+{
+    width: 190%; /* set width with % measurement*/
+    margin-left: 90%;/* set left margin and right margin with % measurement */
+    margin-right: -90%;
+}
+
+#kijimi /* section in movie chars and locations page*/
+{
+    margin-left: 18%;/* set left margin and right margin with % measurement */
+    margin-right: -18%;
+}
+
+#aboutpagemain /* main element in about page*/
+{
+     /* shorthand border property for 3 values (width ,color, style)*/
+    /* margin: 25px 2%;  adjust top,bottom,left,and right margins of this element (main) */
+    display: grid; /* we are using the grid layout but many others exist.  stick to the grid for the project */
+    grid-template-rows: 1fr 0.5fr;
+    grid-template-columns: 1fr 2fr 1fr 2fr 1fr; /* four columns of automatic size.  fr means what fraction do you want to use */
+    column-gap:6%; /*  adjust the space between each column in the grid */
+    row-gap:3%;/*  adjust the space between each row in the grid */
+    border:2em #67A283 double;/* set border width, color, and style in border shorthand*/
+    border-width: 0.2em;/* Set a width for the borders with em measurement */
+}
+
+
+/* heading 2 for about page*/
+#aboutmeheader2
+{
+    text-align: center;/* set horizontal alignment to center */
+    font-size: 2em; /* set the fonts size*/
+    border-radius: 2px;/* set the radius of the element's corners. */
+    margin: 20px 1%;/* set top margin, bottom, left margin and right margin with px and % measurement */
+    background-color: #67A283;/* set background color of header*/
+    font-family: "Zen Dots", sans-serif;/* set the fonts family */
+}
+
+/* section in about page*/
+#missionsection
+{
+    grid-column: 2 / 4;
+    grid-row: 1 /  2;/*sets a grid item's size and location in a grid layout */
+    border: 0.1em #75A4E6 solid;/* set border width, color, and style in border shorthand*/
+    box-shadow:-1px -5px 30px 5px #75A4E6; /* lets you change the surrounding shadow (v-offset, h-offset, blur, spread) of the element*/
+    margin-top: 50px;/* set top margin, bottom margin with px measurement */
+    margin-bottom: 375px;
+    width:110%;/* set width with % measurement*/
+    font-size: 1.5em; /* set font size */
+    text-align: center; /* set horizontal alignment to center */
+}
+
+/* heading 3 in about page*/
+.aboutpgh3
+{
+    background-color: #75A4E6;/* set background color of header*/
+}
+
+
+/* image in about page*/
+#missionaside
+{
+    margin-top: 50px;/* set top margin, bottom margin with px measurement */
+    margin-bottom: 200px;
+    width: 100%;/* set width with % measurement*/
+    grid-column: 4 / 5;/*sets a grid item's size and location in a grid layout */
+    grid-row: 1 / 2; 
+}
+
+/* image in about page*/
+#mandopicture
+{
+    box-shadow:-1px -5px 30px 5px #75A4E6; /* lets you change the surrounding shadow (v-offset, h-offset, blur, spread) of the element*/
+    width: 100%;/* set width with % measurement*/
+}
+
+/* section in about page*/
+#basicfactssection
+{
+    font-size: 1.5em;
+    margin-top: -200px;/* set top margin, bottom margin with px measurement */
+    margin-bottom: 550px;
+    width: 100%;
+    grid-column: 2 / 4;/*sets a grid item's size and location in a grid layout */
+    grid-row: 2 / 3;
+    box-shadow:-1px -5px 30px 5px #75A4E6; /* lets you change the surrounding shadow (v-offset, h-offset, blur, spread) of the element*/
+    text-decoration: none; /*specifies the decoration added to text*/
+    text-align: center;/* set horizontal alignment to center */
+}
+
+/* unordered list in about page*/
+#aboutmeul
+{
+    list-style-type: none;/*specifies the type of list-item marker in a list.*/
+    text-align: justify;/* set horizontal alignment to justify */
+}
+
+/* image in about page*/
+#basicfactspicture
+{
+    grid-column: 4 / 5;/*sets a grid item's size and location in a grid layout */
+    grid-row: 2 / 3;
+    margin-bottom: 300px;/* set bottom margin with px measurement */
+}
+
+/* image in about page*/
+#tiefighter
+{
+    box-shadow:-1px -5px 30px 5px #75A4E6; /* lets you change the surrounding shadow (v-offset, h-offset, blur, spread) of the element*/
+    width: auto;/* set width with auto measurement*/
+}
+
+/* main element in contact page*/
+#contactpagemain
+{
+    display: grid; /*property specifies the display behavior (the type of rendering box) of an element.*/
+    grid-template-columns: 1fr 1fr 1fr; /*specifies the number (and the widths) of columns in a grid layout.*/
+    grid-template-rows: 1fr 3fr 1fr;
+/*specifies the number (and the widths) of rows in a grid layout.*/
+}
+
+/* heading 2 element in contact page*/
+#contactmeh2
+{
+    text-align: center;/* set horizontal alignment to center */
+    grid-column: 1 / 4;/*sets a grid item's size and location in a grid layout */
+    font-size: 2em;
+    border-radius: 2px;
+    margin-top: 20px;
+    margin-bottom: 165px;/* set top and bottom margin with px measurement */
+    background-color: #67A283;
+    font-family: "Zen Dots", sans-serif;
+    margin-left: 1%;/* set left and right margin with % measurement */
+    margin-right: 1%;
+
+}
+
+/* section element in contact page*/
+.contactsections
+{
+    text-align: center;/* set horizontal alignment to center */
+    grid-row: 2 / 3; /*sets a grid item's size and location in a grid layout */
+    margin-top: -100px;/* set top margin with px measurement */
+}
+
+/* unordered list element in contact page*/
+#contactlinksul
+{
+    list-style-type: none;/*specifies the type of list-item marker in a list.*/
+}
+
+/* heading 3 element in contact page*/
+.h3section
+{
+    margin-top: 18px;/* set top, left, and right margin with px or % measurement */
+    background-color: #75A4E6;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: 2em;/* set font size */
+}
+
+/* section element in contact page*/
+.paragraphsection
+{
+    margin-top: 12px;/* set top margin with px measurement */
+    font-size: 1.1em;/* set font size */
+
+}
+
+/* main element in forum page*/
+#forumMain
+{
+    background-color: #67A283;
+}
+
+/* unordered list element in forum page*/
+#ULForum
+{
+    display: grid;/*property specifies the display behavior (the type of rendering box) of an element.*/
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;/*specifies the number (and the widths) of columns in a grid layout.*/
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    margin-top: 15px;/* set top margin with px measurement */
+}
+
+/* heading element in forum page*/
+#forumheader
+{
+    background-color:#75A4E6;
+    grid-column: 1/ 8;/*specifies the number (and the widths) of columns in a grid layout.*/
+    grid-row: 1 / 3;
+    padding-left: 10%;
+    border:0.3em black double;/* set border width, color, and style in border shorthand*/
+}
+
+/* heading element in forum page*/
+#lastpostmadeheader
+{
+    grid-column: 5 / 6;/*specifies the number (and the widths) of columns in a grid layout.*/
+    grid-row: 1 / 3;
+    margin-top: 7px;/* set top margin with px measurement */
+}
+
+/* section element in forum page*/
+#discussionsSection
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+/* unordered list element in forum page*/
+#uldiscussions
+{
+    grid-column: 1 / 2;/*specifies the number (and the widths) of columns in a grid layout.*/
+    grid-row:1 / 3;
+    margin-left: 70%;/* set top,left,right,bottom margin with px and % measurement */
+    margin-right: -70%;
+    margin-bottom: 10px;
+    margin-top: -45px;
+
+}
+
+/* list item element in forum page*/
+.listItemDiscussions
+{
+    list-style-type: none;/*specifies the type of list-item marker in a list.*/
+    color: #ffffff;
+}
+
+/* anchor element in forum page*/
+.forumliHyperLink
+{
+    color: #000000;
+    pointer-events: none;
+
+    /* By adding pointer-events with value none makes the html element doesn’t 
+    respond to any cursor or touch events.
+    */
+}
+
+
+/* list item element in forum page*/
+.lineSeparator
+{
+    list-style-type:none;
+    color: #171717;
+    background-color: #171717;
+    margin-top: 2px;/* set top,left,right,bottom margin with px and % measurement */
+    margin-bottom: 3px;
+    margin-left: -70%;
+    margin-right: -530%;
+    grid-column: 1 / 5;/*specifies the number (and the widths) of columns in a grid layout.*/
+    grid-row:1 / 3;
+    font-size: 3px;
+}
+
+/* unordered list element in forum page*/
+#ulpostsmade
+{
+    grid-column: 5 / 6;/*specifies the number (and the widths) of columns in a grid layout.*/
+    grid-row:1 / 3;
+}
+
+/* list item element in forum page*/
+.listItemPosts
+{
+    list-style-type: none;/*specifies the type of list-item marker in a list.*/
+    margin-top: -5px;/* set top margin with px measurement */
+}
+
+/* paragraph element in forum page*/
+.paragraphitem
+{
+    font-size: 1.5em;
+}
+
+/* list item element in forum page*/
+#li2Posts
+{
+    margin-top: 75px;/* set top margin with px measurement */
+}
+
+/* list item element in forum page*/
+#li3Posts
+{
+    margin-top: 80px;
+}
+
+/* list item element in forum page*/
+#li4Posts
+{
+    margin-top: 38px;
+}
+
+/* list item element in forum page*/
+#li5Posts
+{
+    margin-top: 22px;
+}
+
+
+/* list item element in forum page*/
+#ulImages
+{
+    grid-column: 1 / 2;/*specifies the number (and the widths) of columns in a grid layout.*/
+    grid-row:1 / 3;
+    margin-left: 30%;/* set left, bottom, right, top margin with px and % measurement */
+    margin-right: -30%;
+    margin-bottom: 10px;
+    margin-top: -30px;
+}
+
+/* list item element in forum page*/
+.ImageLI
+{
+    list-style-type: none;/*specifies the type of list-item marker in a list.*/
+}
+
+/* image element in forum page*/
+#jediImage
+{
+ width: 30%;/* set width with % measurement*/
+}
+
+/* image element in forum page*/
+#empireImage
+{
+    width: 42%;/* set width with % measurement*/
+    margin:10px -5%;/* set left, bottom, right, top margin with px and % measurement */
+}
+
+/* image element in forum page*/
+#bb8Image
+{
+    width: 30%;/* set width with % measurement*/
+    margin:-21px 3%;/* set left, bottom, right, top margin with px and % measurement */
+}
+
+/* image element in forum page*/
+#userIntroImage
+{
+    width: 15%;/* set width with % measurement*/
+    margin:18px 9%;/* set left, bottom, right, top margin with px and % measurement */
+}
+
+/* image element in forum page*/
+#offTopicImage
+{
+    width: 20%;/* set width with % measurement*/
+    margin:-9px 6%;/* set left, bottom, right, top margin with px and % measurement */
+}
+
+/* end */
+
